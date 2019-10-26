@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Amazone';
+  src: url('../fonts/17603.ttf') format('truetype');
+}
+
+div.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/bk_img.PNG')
+}
+
+header div.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header div.start span {
+  padding: 2px 12px;
+  font-size: 24pt;
+}
+
+@media (min-width: 800px){
+  header nav {
+    width: 800px;  
+  }  
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  flex-wrap: wrap;
+}
+
+header nav span {
+  padding: 3px 12px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+header nav span img:hover {
+  transform: scale(1.5);
+}
+
+header nav span.selected {
+  background-color: rgba(200,200,0, 0.3);
+}
+
+header div.lang-pad {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 10px;
+}
+
+header div.lang-pad span.btn {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+header div.lang-pad span.btn.selected {
+  background-color: rgba(0,200,0, 0.4);
+}
+
+header div.lang-pad span.btn img {
+  width: 56px;
+  height: 40px;
+}
+
+header div.lang-pad span.btn img:hover {
+  transform: scale(1.5);
+}
+
+section.sec-home div{
+  display: grid;
+}
+
+section.sec-home img {
+  width: 100%;
+  height: 100%;
+}
+
+
+article {
+  text-indent: 3em;
+}
+
+footer {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+div.social {
+  display: flex;
+}
+
+div.social:hover {
+  
+}
+
+div.social .button {
+
+}
+
+div.social .button img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+div.social .button img:hover {
+  opacity: 0.9;
+  width: 23px;
+  height: 23px;
+}
