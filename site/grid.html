@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="grid.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="canvas">
+        <div class="row">
+            <div class="bewel"><img src="images/bel/home.png"></div>
+            <div class="bewel"><img src="images/bel/hm.png"></div>
+            <div class="bewel"><img src="images/bel/works.png"></div>
+            <div class="bewel"><img src="images/bel/about.png"></div>
+        </div>
+        <div class="row">
+            <div class="bewel"><img src="images/rus/home.png"></div>
+            <div class="bewel"><img src="images/rus/hm.png"></div>
+            <div class="bewel"><img src="images/rus/works.png"></div>
+            <div class="bewel"><img src="images/rus/about.png"></div>
+        </div>
+        <div class="row">
+            <div class="bewel"><img src="images/eng/home.png"></div>
+            <div class="bewel"><img src="images/eng/hm.png"></div>
+            <div class="bewel"><img src="images/eng/works.png"></div>
+            <div class="bewel"><img src="images/eng/about.png"></div>
+        </div>
+    </div>
+    <div id="info"></div>
+    <script type="application/javascript">
+        let info = {
+            rows: [],
+            cols: []
+        };
+        window.addEventListener("load", () => {
+            let rows = document.querySelectorAll(".canvas .row");
+            for(let j=0; j<rows.length; j++) {
+                const row = rows[j];
+                let bewels = row.querySelectorAll(".bewel");
+                for(let i=0; i<bewels.length; i++){
+                    const bewel = bewels[i];
+
+                    console.log(bewel);
+                    const s = getComputedStyle(bewel);
+                    console.log(" [" + i + ", " + j + "] -> w:" + s.width + ", h:" + s.height );
+                    const l = document.createElement("div");
+                    l.className = "size-label";
+                    l.innerText = s.width + " x " + s.height;
+                    bewel.appendChild(l);
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,28 +1,23 @@
 const loc = {
   "home": {
-    "eng": "<img src=\"./images/home.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "Домашняя страница",
-    "bel": "Дамашняя старонка"
+    "eng": "<img src=\"./images/eng/home.png\" style=\"height: 80px;width: 113px;\">",
+    "rus": "<img src=\"./images/rus/home.png\" style=\"height: 80px;width: 113px;\">",
+    "bel": "<img src=\"./images/bel/home.png\" style=\"height: 80px;width: 113px;\">"
   },
   "hm": {
-    "eng": "Handmade",
-    "rus": "Ручная работа",
-    "bel": "Рамяство"
+    "eng": "<img src=\"./images/eng/hm.png\" style=\"height: 80px;width: 113px;\">",
+    "rus": "<img src=\"./images/rus/hm.png\" style=\"height: 80px;width: 113px;\">",
+    "bel": "<img src=\"./images/bel/hm.png\" style=\"height: 80px;width: 113px;\">"
   },
-  "imgs": {
-    "eng": "Illustrations",
-    "rus": "Иллюстрации",
-    "bel": "Ілюстрацыі"
-  },
-  "movs": {
-    "eng": "Animations",
-    "rus": "Анимации",
-    "bel": "Анімацыі"
+  "works": {
+    "eng": "<img src=\"./images/eng/works.png\" style=\"height: 80px;width: 113px;\">",
+    "rus": "<img src=\"./images/rus/works.png\" style=\"height: 80px;width: 113px;\">",
+    "bel": "<img src=\"./images/bel/works.png\" style=\"height: 80px;width: 113px;\">",
   },
   "about": {
-    "eng": "<img src=\"./images/about.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "Обо мне",
-    "bel": "Пра мяне"
+    "eng": "<img src=\"./images/eng/about.png\" style=\"height: 80px;width: 113px;\">",
+    "rus": "<img src=\"./images/rus/about.png\" style=\"height: 80px;width: 113px;\">",
+    "bel": "<img src=\"./images/bel/about.png\" style=\"height: 80px;width: 113px;\">"
   },
   "minsk": {
   	"eng": "Minsk",
@@ -34,7 +29,7 @@ const loc = {
     "rus": "Привет! Я иллюстратор и 2D аниматор из Минска. Пожалуйста, обращайтесь ко мне <a href=\"naka.seka@mail.ru\">naka.seka@mail.ru</a>, если я могу быть полезна в вашем проекте. Буду счастлива поработать с вами!",
     "bel": "Прывітанне! Я ілюстратар и 2D аніматар з Мінску. Калі ласка, звяртайцеся да мяне <a href=\"naka.seka@mail.ru\">naka.seka@mail.ru</a>, калі я магу быць карыснай у вашым праекце. Буду шчаслівая папрацаваць з вамі!"
   }
-}
+};
  
 const applyL10n = (lang) => {
   $('[data-l10n]').each((i, el) => {

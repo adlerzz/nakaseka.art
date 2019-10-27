@@ -1,0 +1,29 @@
+div.canvas {
+    display: block;
+    border: 1px red solid;
+    background-color: bisque;
+    width: 4000px;
+}
+
+div.row{
+    border: 1px blue solid;
+    display: block;
+    background-color: cyan;
+}
+
+div.bewel {
+    border: 1px green solid;
+    display: inline-block;
+    background-color: lightgreen;
+    position: relative;
+}
+
+img {
+    background-color: lightgrey;
+}
+
+.size-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

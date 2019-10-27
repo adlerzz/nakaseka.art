@@ -8,14 +8,9 @@
    $('section.sec-hm').show();
  });
 
- $('span.nav-img').click( (e) => {
+ $('span.nav-works').click( (e) => {
    $('section').hide();
-   $('section.sec-img').show();
- });
-
- $('span.nav-anim').click( (e) => {
-   $('section').hide();
-   $('section.sec-anim').show();
+   $('section.sec-works').show();
  });
 
  $('span.nav-about').click( (e) => {
@@ -26,9 +21,9 @@
  $('nav span').click( (e) => {
    $('nav span').removeClass("selected");
    $(e.currentTarget).addClass("selected");
- })
+ });
 
- $('span.nav-home').click();
+ //$('span.nav-home').click();
 
 $(document).ready( (e) => {
   if(location.hash && location.hash.charAt(0) === '#'){
@@ -40,11 +35,15 @@ $(document).ready( (e) => {
       $(".btn-rus").click();
     }
     
-    if(["home", "hm", "img", "anim", "about"].includes(data["sec"])){
+    if(["home", "hm", "works", "about"].includes(data["sec"])){
       $("span.nav-" + data["sec"]).click();
     } else {
       $("span.nav-home").click();
     }
+    console.log("l10n applied");
+  } else {
+      $("span.nav-home").click();
+      $(".btn-rus").click();
   }
 });
 
