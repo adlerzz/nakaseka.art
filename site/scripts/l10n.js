@@ -1,23 +1,23 @@
 const loc = {
   "home": {
-    "eng": "<img src=\"./images/eng/home.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "<img src=\"./images/rus/home.png\" style=\"height: 80px;width: 113px;\">",
-    "bel": "<img src=\"./images/bel/home.png\" style=\"height: 80px;width: 113px;\">"
+    "eng": "<img src=\"./images/eng/home.png\" style=\"height: 80px;\">",
+    "rus": "<img src=\"./images/rus/home.png\" style=\"height: 80px;\">",
+    "bel": "<img src=\"./images/bel/home.png\" style=\"height: 80px;\">"
   },
   "hm": {
-    "eng": "<img src=\"./images/eng/hm.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "<img src=\"./images/rus/hm.png\" style=\"height: 80px;width: 113px;\">",
-    "bel": "<img src=\"./images/bel/hm.png\" style=\"height: 80px;width: 113px;\">"
+    "eng": "<img src=\"./images/eng/hm.png\" style=\"height: 80px;\">",
+    "rus": "<img src=\"./images/rus/hm.png\" style=\"height: 80px;\">",
+    "bel": "<img src=\"./images/bel/hm.png\" style=\"height: 80px;\">"
   },
   "works": {
-    "eng": "<img src=\"./images/eng/works.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "<img src=\"./images/rus/works.png\" style=\"height: 80px;width: 113px;\">",
-    "bel": "<img src=\"./images/bel/works.png\" style=\"height: 80px;width: 113px;\">",
+    "eng": "<img src=\"./images/eng/works.png\" style=\"height: 80px;\">",
+    "rus": "<img src=\"./images/rus/works.png\" style=\"height: 80px;\">",
+    "bel": "<img src=\"./images/bel/works.png\" style=\"height: 80px;\">",
   },
   "about": {
-    "eng": "<img src=\"./images/eng/about.png\" style=\"height: 80px;width: 113px;\">",
-    "rus": "<img src=\"./images/rus/about.png\" style=\"height: 80px;width: 113px;\">",
-    "bel": "<img src=\"./images/bel/about.png\" style=\"height: 80px;width: 113px;\">"
+    "eng": "<img src=\"./images/eng/about.png\" style=\"height: 80px;\">",
+    "rus": "<img src=\"./images/rus/about.png\" style=\"height: 80px;\">",
+    "bel": "<img src=\"./images/bel/about.png\" style=\"height: 80px;\">"
   },
   "minsk": {
   	"eng": "Minsk",

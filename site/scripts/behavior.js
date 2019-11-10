@@ -23,6 +23,11 @@
    $(e.currentTarget).addClass("selected");
  });
 
+ $('aside video').click( (e) => {
+     e.currentTarget.play();
+     console.log("play");
+ });
+
  //$('span.nav-home').click();
 
 $(document).ready( (e) => {
