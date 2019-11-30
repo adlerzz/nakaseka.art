@@ -167,11 +167,11 @@ div.social .button img:hover {
   }
 
   header {
-
+    width: 100%;
   }
 
-  div.menu {
-
+  div.main {
+    width: 100%;
   }
 
 
