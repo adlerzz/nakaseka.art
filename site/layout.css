@@ -3,16 +3,16 @@
   src: url('../fonts/17603.ttf') format('truetype');
 }
 
-div.main {
+div.page {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/bk.png')
+  background-image: url('./images/bk.png')
 }
 
 header {
-  width: 100%;
+  width: calc(100% - 600px);
   display: flex;
   justify-content: center;
 }
@@ -29,7 +29,7 @@ aside.right {
   position: fixed;
 }
 
-header div.start {
+header div.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,8 +50,13 @@ header nav {
 }
 
 header nav span {
-  padding: 6px 20px;
+  padding: 10px 20px;
   cursor: pointer;
+}
+
+header nav span img {
+  height: 60px;
+  margin-left: 15px;
 }
 
 header nav span img:hover {
@@ -59,35 +64,39 @@ header nav span img:hover {
 }
 
 header nav span.selected {
-  background-color: rgba(200,200,0, 0.3);
+  background-image: url("./images/sublab.png");
+  background-size: cover;
 }
 
-header div.lang-pad {
+div.lang-pad {
   position: absolute;
   display: flex;
   top: 0;
   right: 15px;
 }
 
-header div.lang-pad span.btn {
+div.lang-pad span.btn {
   cursor: pointer;
   font-size: 12px;
 }
 
-header div.lang-pad span.btn.selected {
-  background-color: rgba(0,200,0, 0.4);
+div.lang-pad span.btn.selected {
+  background-image: url("./images/sublang.png");
+  background-size: 80px 50px;
+  background-repeat: no-repeat;
 }
 
-header div.lang-pad span.btn img {
-  width: 56px;
+div.lang-pad span.btn img {
+  margin: 2px 9px 0px 8px;
+  width: 60px;
   height: 40px;
 }
 
-header div.lang-pad span.btn img:hover {
+div.lang-pad span.btn img:hover {
   transform: scale(1.5);
 }
 
-section {
+div.main {
   width: calc(100% - 600px);
 }
 
@@ -134,4 +143,39 @@ div.social .button img:hover {
   opacity: 0.9;
   width: 23px;
   height: 23px;
+}
+
+
+@media (max-width: 1024px ) {
+
+  div.page {
+
+  }
+
+  div.lang-pad {
+    position: static;
+  }
+
+  aside.left {
+    position: static;
+    height: 150px;
+  }
+
+
+  aside.right {
+    display: none;
+  }
+
+  header {
+
+  }
+
+  div.menu {
+
+  }
+
+
+
+
+  
 }
